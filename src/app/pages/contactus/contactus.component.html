@@ -1,0 +1,55 @@
+<div class="container" style="padding-top:120px;">
+    <h3>Contactenos</h3>
+    
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, illum asperiores. Repudiandae neque, laudantium sequi ea voluptates distinctio aliquid minima architecto odit sunt provident totam voluptatem magni iure id. Necessitatibus.
+    
+  </p>  
+  <div class="row">
+    <div class = "col-4">
+
+      <form [formGroup]="contactusForm">
+        <div formControlName="persona">
+          <div class="form-group">
+            <input type="text" frormControlName="nombres" placeholder="Ingrese nombre" class="form-control">
+            </div>
+          <div class="form-group">
+            <input type="text" formControlName = "apellidos" placeholder="ingrese apellidos" class="form-control">
+        </div>
+        </div>
+        <div class="form-group">
+          <input type="email" formControlName = "email"placeholder="ingrese email" class="form-control">
+        </div>
+        <div class="form-group">
+          <textarea formControlName ="mensaje" placeholder="mensaje" class="form-control" rows="4"></textarea>
+        </div>
+
+        <div class="form_group">
+
+          <button (clik)="OnSubmit()" class="btn btn-primary">Enviar</button>
+        </div>
+        <p>
+        <!--
+          Datos del formulario:
+          {{contactusForm.value|json}}
+          -->
+          Es valido el formulario?:{{contactusForm.valid}
+        </p>
+<p>
+</p>
+      </form>
+    </div>
+      <div class = "col-8">
+    
+        Aqui va el mapa  
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.1181835893394!2d-76.96290199999999!3d-12.104060999999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c70ab77498c1%3A0xcce9f50642e7c684!2sUniversidad%20Peruana%20de%20Ciencias%20Aplicadas!5e0!3m2!1ses!2spe!4v1654911251435!5m2!1ses!2spe" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div>
+          <b>Telefono:</b> ######-####-#### <b></b>
+          <b>Direccion:</b> Prolongacion Primavera
+
+        </div>
+    </div>
+
+  </div>
+</div>
