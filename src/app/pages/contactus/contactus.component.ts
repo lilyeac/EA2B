@@ -23,7 +23,7 @@ export class ContactusComponent implements OnInit {
     mensaje:['', Validators.required]
   })
 
-  OnSubmit(){
+  ___onSubmit(){
     if(this.contactusForm.valid){
     console.log(this.contactusForm.value)
   }else{

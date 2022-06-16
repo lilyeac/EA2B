@@ -1,5 +1,6 @@
 import { NgModule, ResolvedReflectiveFactory } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
+import { ApartmentListComponent } from "./admin/apartment/apartment-list/apartment-list.component";
 import { ApartmentNewComponent } from "./admin/apartment/apartment-new/apartment-new.component";
 import { ProjectListComponent } from "./admin/project/project-list/project-list.component";
 import { ProjectNewComponent } from "./admin/project/project-new/project-new.component";
@@ -14,13 +15,11 @@ const routes: Routes = [
     {path:'aboutus', component: AboutusComponent},
     {path:'team', component: TeamComponent},
     { path: '', redirectTo: 'home', pathMatch: 'full' },
+    
     { path: 'admin/project/new', component: ProjectNewComponent },
-
     { path: 'admin/project/list', component: ProjectListComponent },
-
     { path: 'admin/apartment/new', component:ApartmentNewComponent },
-
-    { path: 'admin/apartment/list', component: ApartmentNewComponent }
+    { path: 'admin/apartment/list', component: ApartmentListComponent }
 ];
 
 @NgModule({
