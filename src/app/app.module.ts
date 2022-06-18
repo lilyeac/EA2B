@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -12,6 +13,7 @@ import { ProjectNewComponent } from './admin/project/project-new/project-new.com
 import { ProjectListComponent } from './admin/project/project-list/project-list.component';
 import { ApartmentNewComponent } from './admin/apartment/apartment-new/apartment-new.component';
 import { ApartmentListComponent } from './admin/apartment/apartment-list/apartment-list.component';
+import { ProjectComponent } from './pages/project/project.component';
 
 
 @NgModule({
@@ -24,12 +26,14 @@ import { ApartmentListComponent } from './admin/apartment/apartment-list/apartme
     ProjectNewComponent,
     ProjectListComponent,
     ApartmentNewComponent,
-    ApartmentListComponent
+    ApartmentListComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

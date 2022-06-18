@@ -7,6 +7,7 @@ import { ProjectNewComponent } from "./admin/project/project-new/project-new.com
 import { AboutusComponent } from "./pages/aboutus/aboutus.component";
 import { ContactusComponent } from "./pages/contactus/contactus.component";
 import { HomeComponent } from "./pages/home/home.component";
+import { ProjectComponent } from "./pages/project/project.component";
 import { TeamComponent } from "./pages/team/team.component";
 
 const routes: Routes = [
@@ -14,8 +15,9 @@ const routes: Routes = [
     {path:'contactus', component:ContactusComponent},
     {path:'aboutus', component: AboutusComponent},
     {path:'team', component: TeamComponent},
+    { path: 'project/:id', component: ProjectComponent },
     { path: '', redirectTo: 'home', pathMatch: 'full' },
-    
+
     { path: 'admin/project/new', component: ProjectNewComponent },
     { path: 'admin/project/list', component: ProjectListComponent },
     { path: 'admin/apartment/new', component:ApartmentNewComponent },
